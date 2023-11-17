@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f2e0;
+}
+
+/*navbar*/
+
+.navbar {
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.80);
+}
+
+.navbar ul a img {
+    width: 32px;
+    margin: 15px 35px;
+}
+
+.navbar ul li {
+    padding: 20px 0px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color:rgb(130, 163, 151);
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(130, 163, 151, 0.807);
+    color:rgb(14, 31, 18);
+}
+
+/*main*/
+
+.main {
+    background-color: rgba(0, 0, 0, 0.80);
+    padding: 20px 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 35%;
+    right: 40%;
+}
+
+.headings {
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+/*(152, 117, 117)*/
+.main h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+span {
+    color:rgb(194, 240, 225);
+}
+
+.main p {
+    color:white;
+    line-height: 22px;
+}
+
+/*accueil*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(images/background.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1; 
+    opacity: 95%;  
+}
+
+.btn {
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid rgb(130, 163, 151);
+    color: white;
+    font-weight: bolder;
+    outline: none;
+    transition: .6s ease;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(130, 163, 151);
+    color: white;
+}
+
+/*About Section*/
+
+#about {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+#pic {
+    display: flex;
+}
+
+#pic img {
+    width: 600px;
+    height: 550px;
+    opacity: 95%;
+    z-index: -1; 
+}
+
+#intro {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    padding: 10px;
+    border: 2.5px solid rgb(130, 163, 151);
+}
+
+#intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cadre {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+/*Portfolio Section*/
+
+/*Contact*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url(images/plante_grasse.jpg) no-repeat center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1; 
+    opacity: 95%;  
+}
+
+.fcontact {
+    background-color: rgba(0, 0, 0, 0.80);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 150px;
+    margin-top: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size:50%;
+}
+
+form input[type=text], select{
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 15px 20px;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.fcontact h2 {
+    font-size: 50px;
+    color: white;
+
+    margin-left: 45px;
+}
+
+/*Blog Section*/
+
+.article {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+.img-article1 {
+    background-image: url(./images/feuille.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 50px 0px;
+}
+.img-article2 {
+    background-image: url(./images/branche.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 50px 0px;
+}
+
+.aperçu {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    padding: 10px;
+    border: 2.5px solid rgb(130, 163, 151);
+    margin: 50px 0px;
+}
+
+.aperçu h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.aperçu a {
+    text-decoration: none;
+}
+
+.more {
+    display: flex;
+    padding: 10px 35px;
+    background-color: rgb(182, 114, 246);
+    border: 2px solid rgb(182, 114, 246);
+    color: white;
+    font-weight: bolder;
+    outline: none;
+    transition: .6s ease;
+    margin-bottom: 30px;
+}
+
+.more:hover {
+    cursor: pointer;
+    background-color: rgb(130, 163, 151);
+    border: 2px solid rgb(130, 163, 151);
+    color: white;
+}
+
+/*Article 1*/
+
+h2{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3{
+    font-size: small;
+    color: rgb(90, 86, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Footer*/
+
+footer {
+    background-color: rgb(130, 163, 151);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: -10px;
+    bottom: 0;
+    width: 100%;
+}*/
+
+.contactb {
+    background-color: rgb(130, 163, 151);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
