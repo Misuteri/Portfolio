@@ -158,6 +158,27 @@ span {
     padding-right: 300px;
 }
 
+.competences ul {
+    display: flex;
+    align-content: center;
+    margin-left: 25%;
+}
+
+.competences h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.competences ul img {
+    display: flex;
+    align-content: center;
+}
+
+.languages {
+    width: 30%;
+}
+
 /*Portfolio Section*/
 
 /*Contact*/
@@ -315,12 +336,32 @@ footer {
     margin-top: -10px;
     bottom: 0;
     width: 100%;
-}*/
+}
 
-.contactb {
-    background-color: rgb(130, 163, 151);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
+.bottom p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom p a {
+    text-decoration: none;
+}
+
+.bottom img {
+margin-right: 75px;
+margin-left: 10px;
+}
+
+.artbottom {
+    color: black;
+    font-weight: bold;
+}
+
+.artbottom a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(78, 31, 122);
+    margin: 30px;
 }
